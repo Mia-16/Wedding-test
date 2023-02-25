@@ -27,3 +27,46 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+//RSVP SECTION
+
+// Get the form elements
+const form = document.querySelector('.js-form');
+const nameInput = document.querySelector('.js-form-name');
+const optionYes = document.querySelector('.js-rsvp-option[data-value="YES"]');
+const optionNo = document.querySelector('.js-rsvp-option[data-value="NO"]');
+const dietInput = document.querySelector('.js-form-diet');
+const commentsInput = document.querySelector('.js-form-comments');
+const submitButton = document.querySelector('.rsvp__submitbutton');
+
+// Set up the event listeners
+optionYes.addEventListener('click', () => {
+  optionYes.classList.add('is-active');
+  optionNo.classList.remove('is-active');
+  document.querySelector('.js-rsvp-show').classList.add('is-active');
+  submitButton.removeAttribute('disabled');
+  submitButton.style.opacity = 1;
+});
+
+optionNo.addEventListener('click', () => {
+  optionNo.classList.add('is-active');
+  optionYes.classList.remove('is-active');
+  document.querySelector('.js-rsvp-show').classList.remove('is-active');
+  submitButton.removeAttribute('disabled');
+  submitButton.style.opacity = 1;
+});
+
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  const name = nameInput.value;
+  const attending = optionYes.classList.contains('is-active') || optionNo.classList.contains('is-active');
+  const diet = dietInput.value;
+  const comments = commentsInput.value;
+  if (name && attending) {
+    // Send the data to the server using AJAX
+    // Display the success message
+    form.style.display = 'none';
+    document.querySelector('.js-form-success').style.display = 'block';
+  }
+});
