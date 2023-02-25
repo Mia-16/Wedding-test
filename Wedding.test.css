@@ -81,4 +81,82 @@ ul.topnav {
      text-align: center;
   }
   
+
+
+/* RSVP section */
+
+  .text-center {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center
+}
+
+.rsvp__options {
+  display: flex;
+  justify-content:left;
+}
+
+.rsvp__option {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.rsvp__option.is-active {
+  background-color: #B0BF8E;
+  color: white;
+}
+
+.rsvp__show {
+  display: none;
+}
+
+.rsvp__show.is-active {
+  display: block;
+}
+
+.js-form-name,
+.js-form-comments,
+.js-form-diet {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.rsvp__submitbutton {
+  background-color: #60731D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.rsvp__submitbutton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.js-form-success {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+
+}
+
+.container {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
   
