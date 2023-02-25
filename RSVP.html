@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-  
-  <title>Our Project Website</title>
-  <meta name="description" content="Welcome to our project website" /> 
-  <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <script src="Wedding.test.js"></script>
-  <link rel="stylesheet" href="Wedding.test.css">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Our Project Website</title>
+     <meta name="description" content="Welcome to our project website" />
+     <meta name="viewport" content="width=device-width,initial-scale=1" >
+     <link rel="stylesheet" href="wedding.test.css">
 </head>
+ <body>
+<div>
+ <ul class="topnav">
+ <li><a href="homepage.html">Home</a></li>
+ <li><a href="/Information.html">Information</a></li>
+ <li><a class="active" href="RSVP.html">RSVP</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+
+</div>
+
+<div class="heading">
+ <h1>Celebrate With Us</h1>
+ <p>We hope you’ll join us for this special day.</p>
+</div>
 
 
-<body>
-    <div>
-      <ul class="topnav">
-      <li><a class="active" href="/home.html">Home</a></li>
-      <li><a href="/Information.html">Information</a></li>
-      <li><a href="/RSVP.html">RSVP</a></li>
-    </ul>
-    
-    <div style="padding:0 16px;">
-    
+<div class="container">
+    <div class="text-center"> 
+        <p>Please respond to our RSVP by June 15th, 2022.</p>
     </div>
-    <div class="heading">
-      <h1>RSVP</h1>
-      <p>Please let us know if you can attend.</p>
-      </div>
+    <div class="js-form" style="display: block">
+        <h4>Name*</h4>
+        <input class="js-form-name" type="text" placeholder="Full Name">
+        <h4>Will you be attending?*</h4>
+        <div class="rsvp__options">
+            <div class="rsvp__option is-active js-rsvp-option" data-value="YES">YES - I will be attending</div>
+            <div class="rsvp__option js-rsvp-option" data-value="NO">NO - I will not be attending</div>
+        </div>
+        <div class="rsvp__show is-active js-rsvp-show">
+            <h4>Any Dietary Restrictions?*</h4>
+            <input class="js-form-diet" type="text" placeholder="List any diet restrictions">
+            <h4>Questions or Comments?</h4>
+            <input class="js-form-comments" type="text" placeholder="Your comment or question">
+        </div>
+        <button class="rsvp__submitbutton" disabled style="opacity:0.3">Submit</button>
+    </div>
+    <div class="index-rsvp__success js-form-success" style="display: none">
+        <span><strong>Thank you!</strong></span>
+        <br>Your response has been submitted.
 
+    </div>     
+</div>
 
-      <div class="content">
-        <h4 id="hd2" class="aa">RSVP form.</h4>
-      </div>
+<div class="footer">
+    <h4>This website was created by Mia, Etta and Dervla.</h4>
+</div>
 
-      <br>
-  <br>
-    
-     
- <div class="footer">
-  <h4>This website was created by Mia, Etta and Dervla.</h4>
-   </div>
-    
+<script src="RSVP2.js"></script>
 </body>
-  
- 
-   
-  
-  
 </html>
