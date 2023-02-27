@@ -161,26 +161,29 @@ ul.topnav {
 
 /*Infomation css*/
 
+
 .schedule {
-  padding: 18px;
+  padding-left: 100px;
+  padding-right: 100px;
   width: 100%;
   padding-bottom: 50px;
 }
 
 .ourstory {
-  padding: 18px;
+  padding-left: 100px;
+  padding-right: 100px;
   width: 100%;
   padding-bottom: 50px;
 }
 
 .qa {
-  padding: 18px;
+  padding-left: 100px;
+  padding-right: 100px;
   width: 100%;
   padding-bottom: 50px;
 }
 
 .gallery {
-  padding: 18px;
   width: 100%;
   padding-bottom: 50px;
 }
